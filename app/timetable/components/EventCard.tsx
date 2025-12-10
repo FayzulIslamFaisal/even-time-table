@@ -1,3 +1,4 @@
+// components/EventCard.tsx
 import { Event } from '../data/localStore';
 import { timeToPixelOffset, durationToPixels, calculateDuration, formatTime12Hour } from '../utils/timeUtils';
 

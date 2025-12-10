@@ -1,3 +1,4 @@
+// components/TimeColumn.tsx
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { generateTimeSlots, formatTime12Hour } from '../utils/timeUtils';
 
@@ -10,15 +11,13 @@ export default function TimeColumn() {
                 <div className="h-12 border-b border-gray-200 bg-gray-50" />
                 <ScrollArea className="h-[calc(100vh-48px)]">
                     <div className="relative">
-                        {timeSlots.map((time, index) => (
+                        {timeSlots.map((time) => (
                             <div
                                 key={time}
-                                className="border-b border-gray-300 py-2 text-base bg-gray-100 text-black px-2 flex items-center justify-center"
+                                className="border-b border-gray-300 py-4 text-base bg-gray-100 text-black px-2 flex items-center justify-center"
                                 style={{ height: '20px' }}
                             >
-                                {index % 4 === 0 && ( 
-                                    <span className="font-medium">{formatTime12Hour(time)}</span>
-                                )}
+                                <span className="font-medium">{formatTime12Hour(time)}</span>
                             </div>
                         ))}
                     </div>

@@ -1,3 +1,4 @@
+// components/EventGrid.tsx
 import { Event } from '../data/localStore';
 import { generateTimeSlots } from '../utils/timeUtils';
 import EventCard from './EventCard';

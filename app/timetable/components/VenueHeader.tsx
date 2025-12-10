@@ -1,3 +1,5 @@
+//components/VenueHeader.tsx
+
 interface VenueHeaderProps {
     venues: string[];
     venueWidth: number;
@@ -10,7 +12,7 @@ export default function VenueHeader({ venues, venueWidth }: VenueHeaderProps) {
                 {venues.map((venue, index) => (
                     <div
                         key={index}
-                        className="flex-shrink-0 h-12 flex items-center justify-center border-r border-gray-200 bg-gradient-to-b from-gray-50 to-white"
+                        className="shrink-0 h-12 flex items-center justify-center border-r border-gray-200 bg-gradient-to-b from-gray-50 to-white"
                         style={{ width: `${venueWidth}px` }}
                     >
                         <span className="font-semibold text-sm text-gray-700">{venue}</span>
