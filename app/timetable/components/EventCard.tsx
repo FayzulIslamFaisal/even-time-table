@@ -29,7 +29,7 @@ export default function EventCard({ event, venueIndex, venueWidth, onClick }: Ev
 
     return (
         <div
-            className={`absolute ${colorClass} border-l-4 rounded-md p-2 shadow-md cursor-pointer hover:shadow-lg transition-shadow overflow-hidden`}
+            className={`absolute ${colorClass} border-l-4 rounded-md p-2 shadow-md cursor-pointer hover:shadow-lg transition-shadow mb-4 overflow-hidden`}
             style={{
                 top: `${top}px`,
                 left: `${left}px`,
