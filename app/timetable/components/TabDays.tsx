@@ -8,6 +8,8 @@ interface TabDaysProps {
 }
 
 export default function TabDays({ weekDates, selectedDate, onDateChange }: TabDaysProps) {
+    console.log("weekDates==>",weekDates);
+    
     return (
         <div className="border-b border-gray-200 bg-white shadow-sm">
             <div className="w-full overflow-x-auto">
@@ -31,11 +33,11 @@ export default function TabDays({ weekDates, selectedDate, onDateChange }: TabDa
                                     `}
                                 >
                                     <div className="flex flex-col items-center gap-1">
-                                        <span className={`text-xs font-medium ${isSelected ? 'text-blue-600' : 'text-gray-500'}`}>
+                                        <span className={`text-base font-bold ${isSelected ? 'text-blue-600' : 'text-gray-500'}`}>
                                             {dateInfo.day}
                                         </span>
-                                        <span className={`text-lg font-bold ${isSelected ? 'text-blue-600' : 'text-gray-700'}`}>
-                                            {dateInfo.date}
+                                        <span className={`text-lg font-medium ${isSelected ? 'text-blue-600' : 'text-gray-700'}`}>
+                                            Date: {dateInfo.fullDate}
                                         </span>
                                     </div>
                                 </TabsTrigger>
