@@ -33,7 +33,6 @@ import TimeColumn from './components/TimeColumn';
 import EventGrid from './components/EventGrid';
 import {
     loadData,
-    saveData,
     getEventsForDate,
     addEvent,
     updateEvent,
@@ -44,7 +43,7 @@ import {
 } from './data/localStore';
 import { getWeekDates } from './utils/timeUtils';
 
-const VENUE_WIDTH = 200; // pixels
+const VENUE_WIDTH = 200;
 
 export default function TimetablePage() {
     const [data, setData] = useState<TimetableData | null>(null);

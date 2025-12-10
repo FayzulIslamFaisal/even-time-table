@@ -2,12 +2,12 @@ export interface Event {
     id: string;
     title: string;
     venue: string;
-    startTime: string; // "HH:MM" format
-    endTime: string;   // "HH:MM" format
+    startTime: string; 
+    endTime: string;  
 }
 
 export interface TimetableData {
-    selectedDate: string; // "YYYY-MM-DD" format
+    selectedDate: string;
     venues: string[];
     events: {
         [date: string]: Event[];

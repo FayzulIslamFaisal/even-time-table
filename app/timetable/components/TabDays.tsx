@@ -21,9 +21,10 @@ export default function TabDays({ weekDates, selectedDate, onDateChange }: TabDa
                                     key={dateInfo.fullDate}
                                     value={dateInfo.fullDate}
                                     className={`
-                                        w-[200px]
+                                        w-[280px]
+                                        border-2
                                         bg-voilet-200
-                                        flex-shrink-0 px-6 py-4 rounded-none border-b-2 transition-all
+                                        shrink-0 px-6 py-4 rounded-none border-b-2 transition-all
                                         data-[state=active]:border-blue-500 data-[state=active]:bg-blue-50
                                         data-[state=inactive]:border-transparent
                                         hover:bg-sky-200
