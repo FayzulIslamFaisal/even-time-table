@@ -6,14 +6,14 @@ export default function TimeColumn() {
 
     return (
         <div className="sticky left-0 z-20 bg-white border-r border-gray-200">
-            <div className="w-20 shrink-0">
+            <div className="w-30 shrink-0">
                 <div className="h-12 border-b border-gray-200 bg-gray-50" />
                 <ScrollArea className="h-[calc(100vh-48px)]">
                     <div className="relative">
                         {timeSlots.map((time, index) => (
                             <div
                                 key={time}
-                                className="border-b border-gray-100 text-xs text-gray-600 px-2 flex items-center justify-end"
+                                className="border-b border-gray-300 py-2 text-base bg-gray-100 text-black px-2 flex items-center justify-center"
                                 style={{ height: '20px' }}
                             >
                                 {index % 4 === 0 && ( 
