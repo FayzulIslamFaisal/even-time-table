@@ -29,17 +29,17 @@ export default function EventCard({ event, venueIndex, venueWidth, onClick }: Ev
 
     return (
         <div
-            className={`absolute ${colorClass} border-l-4 rounded-md p-2 shadow-md cursor-pointer hover:shadow-lg transition-shadow mb-4 overflow-hidden`}
+            className={`absolute ${colorClass} border-l-4 rounded-md shadow-md cursor-pointer hover:shadow-lg transition-shadow`}
             style={{
                 top: `${top}px`,
                 left: `${left}px`,
                 width: `${venueWidth - 8}px`,
                 height: `${height}px`,
-                minHeight: '40px'
+                minHeight: '70px'
             }}
             onClick={onClick}
         >
-            <div className="text-white">
+            <div className="text-white px-2 py-1">
                 <h3 className="font-semibold text-sm truncate">{event.title}</h3>
                 <p className="text-xs opacity-90 mt-1">
                     {formatTime12Hour(event.startTime)} - {formatTime12Hour(event.endTime)}

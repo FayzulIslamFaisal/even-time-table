@@ -21,10 +21,10 @@ export default function EventGrid({ venues, events, venueWidth, onEventClick }: 
             <div className="relative" style={{ height: `${gridHeight}px` }}>
                 {/* Background grid */}
                 <div className="absolute inset-0 flex">
-                    {venues.map((venue, venueIndex) => (
+                    {venues.map((_, venueIndex) => (
                         <div
                             key={venueIndex}
-                            className="flex-shrink-0 border-r border-gray-200"
+                            className="shrink-0 border-r border-gray-200"
                             style={{ width: `${venueWidth}px` }}
                         >
                             {timeSlots.map((time, timeIndex) => (
