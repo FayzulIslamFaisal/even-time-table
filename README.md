@@ -106,10 +106,6 @@ interface TimetableData {
 
 ## 🔧 Setup & Installation
 
-1. **Clone the repository**
-   ```bash
-   cd event-time-table-for-selise
-   ```
 
 2. **Install dependencies**
    ```bash
@@ -121,8 +117,6 @@ interface TimetableData {
    npm run dev
    ```
 
-4. **Open browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📝 Usage
 
@@ -145,22 +139,11 @@ interface TimetableData {
 2. Click the "Delete" button
 3. Confirm the deletion
 
-### Changing Days
-- Click on any day tab at the top to view events for that day
-- The tab bar is horizontally scrollable for easy navigation
-
-## 🎨 Customization
-
-### Changing Venue Width
-Edit the `VENUE_WIDTH` constant in `/app/timetable/page.tsx`:
-```typescript
-const VENUE_WIDTH = 200; // Change to desired width in pixels
-```
 
 ### Adding More Venues
 Venues are stored in localStorage. You can modify the initial data in `/app/timetable/data/localStore.ts`:
 ```typescript
-venues: ['Hall A', 'Hall B', 'Hall C', 'Hall D', 'Hall E']
+venues: ['Hall A', 'Hall B', 'Hall C', 'Hall D']
 ```
 
 ### Adjusting Time Intervals
@@ -190,37 +173,12 @@ npm run build
 npm start
 ```
 
-## 📱 Browser Support
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
 ## 🔒 Data Persistence
 
 All data is stored in browser localStorage under the key `event-timetable-data`. Data persists across page refreshes but is browser-specific.
 
-## 🎯 Future Enhancements
-
-- Drag and drop event repositioning
-- Event color customization
-- Export to PDF/iCal
-- Multi-day events
-- Event categories and filtering
-- Search functionality
-- User authentication
-- Backend API integration
-- Mobile responsive improvements
-
-## 📄 License
-
-MIT License - feel free to use this project for any purpose.
 
 ## 👨‍💻 Author
 
 Built with ❤️ using Next.js and shadcn/ui
 
----
-
-**Note**: This is a client-side only application. All data is stored locally in the browser. For production use with multiple users, consider implementing a backend API and database.
